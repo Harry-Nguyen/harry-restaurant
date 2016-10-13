@@ -1,2 +1,11 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div class="btn-group btn-group-justified" role="group">
+<% {'breakfast' => 'Breakfast', 'lunch' => 'Lunch', 'dinner' => 'Dinner', 'drinks' => 'Drinks'}.each do |key, value| %>
+
+	<% if params[:section] == key %>
+		<%= link_to value, root_path(:section => key), class: 'btn btn-primary' %>
+	<% else %>
+		<%= link_to value, root_path(:section => key), class: 'btn btn-secondary' %>
+	<% end %>
+
+<% end %>
+</div>

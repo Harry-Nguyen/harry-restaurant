@@ -1,5 +1,5 @@
 <div class="btn-group btn-group-justified" role="group">
-<% {'breakfast' => 'Breakfast', 'lunch' => 'Lunch', 'dinner' => 'Dinner', 'drinks' => 'Drinks'}.each do |key, value| %>
+<% {'breakfast' => 'Breakfast', 'lunch' => 'Lunch', 'dinner' => 'Dinner', 'drink' => 'Drinks'}.each do |key, value| %>
 
 	<% if params[:section] == key %>
 		<%= link_to value, root_path(:section => key), class: 'btn btn-primary' %>
@@ -9,3 +9,16 @@
 
 <% end %>
 </div>
+
+<section>
+<% i = 0 %>
+	<% @foods.each do |f| %>
+	<% i = i + 1 %>
+	<p> <%=i%></p>
+	<p> Name: <%= f.name %></p>
+	<p> Description: <%= f.description %></p>
+	<p> Price: <%= f.price %></p>
+	<p> Section: <%= f.section %></p>
+	<img src="<%=f.image%>">
+	<% end %>
+</section>

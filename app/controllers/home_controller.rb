@@ -1,6 +1,11 @@
 class HomeController < ApplicationController
   def index
-  	@foods = Food.all
+  	section = params[:section]
+  	if section
+  		@foods = Food.where(section: section)
+  	else
+  		@foods = Food.all
+  	end
   end
 
   def contact_us

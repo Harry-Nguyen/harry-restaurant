@@ -27,6 +27,7 @@
 	<% @foods.each do |f| %>
 	<% i = i + 1 %>
 	<p> <%=i%></p>
+	<p> <%= link_to f.name, f %> </p>
 	<p> Name: <%= f.name %></p>
 	<p> Description: <%= f.description %></p>
 	<p> Price: <%= f.price %></p>

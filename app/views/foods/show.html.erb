@@ -1,9 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @food.name %>
-</p>
+<h1><%= @food.name %></h1>
 
 <p>
   <strong>Description:</strong>
@@ -13,6 +10,7 @@
 <p>
   <strong>Price:</strong>
   <%= @food.price %>
+  <span>VND</span>
 </p>
 
 <p>
@@ -20,10 +18,4 @@
   <%= @food.section %>
 </p>
 
-<p>
-  <strong>Image:</strong>
-  <%= @food.image %>
-</p>
-
-<%= link_to 'Edit', edit_food_path(@food) %> |
-<%= link_to 'Back', foods_path %>
+<img src="<%= @food.image %>">

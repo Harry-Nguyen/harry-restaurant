@@ -10,6 +10,7 @@ class OrdersController < ApplicationController
   # GET /orders/1
   # GET /orders/1.json
   def show
+    @food = Food.find(@order.food_id)
   end
 
   # GET /orders/new
@@ -30,7 +31,7 @@ class OrdersController < ApplicationController
 
     respond_to do |format|
       if @order.save
-        format.html { redirect_to @order, notice: 'Order was successfully created.' }
+        format.html { redirect_to @order, notice: 'Thank you for your order page.' }
         format.json { render :show, status: :created, location: @order }
       else
         format.html { render :new }

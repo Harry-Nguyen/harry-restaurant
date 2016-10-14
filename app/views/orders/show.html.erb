@@ -1,7 +1,17 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>Food:</strong>
+  <%= @food.name %>
+</p>
+
+<p>
+  <strong>Total cost:</strong>
+  <%= (@food.price + 20000).to_s %>
+</p>
+
+<p>
+  <strong>Customer:</strong>
   <%= @order.name %>
 </p>
 
@@ -16,9 +26,6 @@
 </p>
 
 <p>
-  <strong>Food:</strong>
-  <%= @order.food %>
+  <strong>Ordered at:</strong>
+  <%= @order.created_at %>
 </p>
-
-<%= link_to 'Edit', edit_order_path(@order) %> |
-<%= link_to 'Back', orders_path %>

@@ -1,141 +1,20 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
-one:
-  name: "Banh cuon"
-  description: "This is description"
-  price: 21000
-  section: breakfast
-  image: "/img/breakfast/banhcuon.jpg"
-
-two:
-  name: "Banh mi"
-  description: "This is description"
-  price: 23000
-  section: breakfast
-  image: "/img/breakfast/banhmi.jpg"
-
-three:
-  name: "Bun cha"
-  description: "This is description"
-  price: 22000
-  section: breakfast
-  image: "/img/breakfast/buncha.jpg"
-
-four:
-  name: "Pho"
-  description: "This is description"
-  price: 24000
-  section: breakfast
-  image: "/img/breakfast/pho.jpg"
-
-five:
-  name: "Xoi xeo"
-  description: "This is description"
-  price: 25000
-  section: breakfast
-  image: "/img/breakfast/xoi.jpg"
-
-six:
-  name: "Singapore Chicken Rice"
-  description: "This is description"
-  price: 41000
-  section: lunch
-  image: "/img/lunch/chickenrice.jpg"
-
-seven:
-  name: "Korean Rice Cake"
-  description: "This is description"
-  price: 42000
-  section: lunch
-  image: "/img/lunch/ricecake.png"
-
-eight:
-  name: "Japanese Cake"
-  description: "This is description"
-  price: 44000
-  section: lunch
-  image: "/img/lunch/nhat2.jpg"
-
-nine:
-  name: "Japanese Sushi"
-  description: "This is description"
-  price: 43000
-  section: lunch
-  image: "/img/lunch/sushi.jpg"
-
-ten:
-  name: "Korean BBQ"
-  description: "This is description"
-  price: 45000
-  section: lunch
-  image: "/img/lunch/thitnuong.jpg"
-
-eleven:
-  name: "Banh Xeo"
-  description: "This is description"
-  price: 51000
-  section: dinner
-  image: "/img/dinner/banhxeo.jpg"
-
-twelve:
-  name: "Chilli Crab"
-  description: "This is description"
-  price: 55000
-  section: dinner
-  image: "/img/dinner/chillicrab.jpg"
-
-thirteen:
-  name: "Chao Ech Singapore"
-  description: "This is description"
-  price: 54000
-  section: dinner
-  image: "/img/dinner/frogporridge.jpg"
-
-forteen:
-  name: "Kim Chi Soup"
-  description: "This is description"
-  price: 52000
-  section: dinner
-  image: "/img/dinner/kimchisoup.jpg"
-
-fifteen:
-  name: "Mi Tuong Den"
-  description: "This is description"
-  price: 53000
-  section: dinner
-  image: "/img/dinner/mituongden.jpg"
-
-sixteen:
-  name: "Bia hoi"
-  description: "This is description"
-  price: 33000
-  section: drink
-  image: "/img/drink/biahoi.jpg"
-
-seventeen:
-  name: "Champagne"
-  description: "This is description"
-  price: 31000
-  section: drink
-  image: "/img/drink/champagne.jpg"
-
-eighteen:
-  name: "Singapore Sling"
-  description: "This is description"
-  price: 34000
-  section: drink
-  image: "/img/drink/singaporesling.jpg"
-
-nineteen:
-  name: "Sting dau"
-  description: "This is description"
-  price: 35000
-  section: drink
-  image: "/img/drink/sting.jpg"
-
-tweenty:
-  name: "Tra Da"
-  description: "This is description"
-  price: 32000
-  section: drink
-  image: "/img/drink/trada.jpg"
+Food.create name: "Banh cuon", description: "This is description", price: 21000, section: "breakfast", image: "/img/breakfast/banhcuon.jpg"
+Food.create name: "Banh mi", description: "This is description", price: 23000, section: "breakfast", image: "/img/breakfast/banhmi.jpg"
+Food.create name: "Bun cha", description: "This is description", price: 22000, section: "breakfast", image: "/img/breakfast/buncha.jpg"
+Food.create name: "Pho", description: "This is description", price: 24000, section: "breakfast", image: "/img/breakfast/pho.jpg"
+Food.create name: "Xoi xeo", description: "This is description", price: 25000, section: "breakfast", image: "/img/breakfast/xoi.jpg"
+Food.create name: "Singapore Chicken Rice", description: "This is description", price: 41000, section: "lunch", image: "/img/lunch/chickenrice.jpg"
+Food.create name: "Korean Rice Cake", description: "This is description", price: 42000, section: "lunch", image: "/img/lunch/ricecake.png"
+Food.create name: "Japanese Cake", description: "This is description", price: 44000, section: "lunch", image: "/img/lunch/nhat2.jpg"
+Food.create name: "Japanese Sushi", description: "This is description", price: 43000, section: "lunch", image: "/img/lunch/sushi.jpg"
+Food.create name: "Korean BBQ", description: "This is description", price: 45000, section: "lunch", image: "/img/lunch/thitnuong.jpg"
+Food.create name: "Banh Xeo", description: "This is description", price: 51000, section: "dinner", image: "/img/dinner/banhxeo.jpg"
+Food.create name: "Chilli Crab", description: "This is description", price: 55000, section: "dinner", image: "/img/dinner/chillicrab.jpg"
+Food.create name: "Chao Ech Singapore", description: "This is description", price: 54000, section: "dinner", image: "/img/dinner/frogporridge.jpg"
+Food.create name: "Kim Chi Soup", description: "This is description", price: 52000, section: "dinner", image: "/img/dinner/kimchisoup.jpg"
+Food.create name: "Mi Tuong Den", description: "This is description", price: 53000, section: "dinner", image: "/img/dinner/mituongden.jpg"
+Food.create name: "Bia hoi", description: "This is description", price: 33000, section: "drink", image: "/img/drink/biahoi.jpg"
+Food.create name: "Champagne", description: "This is description", price: 31000, section: "drink", image: "/img/drink/champagne.jpg"
+Food.create name: "Singapore Sling", description: "This is description", price: 34000, section: "drink", image: "/img/drink/singaporesling.jpg"
+Food.create name: "Sting dau", description: "This is description", price: 35000, section: "drink", image: "/img/drink/sting.jpg"
+Food.create name: "Tra Da", description: "This is description", price: 32000, section: "drink", image: "/img/drink/trada.jpg"

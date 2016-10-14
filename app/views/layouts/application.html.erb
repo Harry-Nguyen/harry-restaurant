@@ -16,7 +16,12 @@
 			<li class="nav-item"><%= link_to "Menu", root_path, class: "nav-link" %></li>
 			<li class="nav-item"><%= link_to "Contact Us", contact_us_path, class: "nav-link" %></li>
 		</ul>
+    <%= form_tag root_path, method: 'get', class: 'form-inline pull-xs-right', role: 'search' do %>
+      <%= text_field_tag :search, params[:search], placeholder: "Search", class: "form-control"%>
+      <%= submit_tag "Search", class: 'btn btn-warning' %>
+    <% end %>
 	</nav>
+
 	</header>
   <section class="container">
     <%= yield %>

@@ -1,0 +1,141 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: "Banh cuon"
+  description: "This is description"
+  price: 20000
+  section: breakfast
+  image: "/img/breakfast/banhcuon.jpg"
+
+two:
+  name: "Banh mi"
+  description: "This is description"
+  price: 20000
+  section: breakfast
+  image: "/img/breakfast/banhmi.jpg"
+
+three:
+  name: "Bun cha"
+  description: "This is description"
+  price: 20000
+  section: breakfast
+  image: "/img/breakfast/buncha.jpg"
+
+four:
+  name: "Pho"
+  description: "This is description"
+  price: 20000
+  section: breakfast
+  image: "/img/breakfast/pho.jpg"
+
+five:
+  name: "Xoi xeo"
+  description: "This is description"
+  price: 20000
+  section: breakfast
+  image: "/img/breakfast/xoi.jpg"
+
+six:
+  name: "Singapore Chicken Rice"
+  description: "This is description"
+  price: 40000
+  section: lunch
+  image: "/img/lunch/chickenrice.jpg"
+
+seven:
+  name: "Korean Rice Cake"
+  description: "This is description"
+  price: 40000
+  section: lunch
+  image: "/img/lunch/ricecake.png"
+
+eight:
+  name: "Japanese Cake"
+  description: "This is description"
+  price: 40000
+  section: lunch
+  image: "/img/lunch/nhat2.jpg"
+
+nine:
+  name: "Japanese Sushi"
+  description: "This is description"
+  price: 40000
+  section: lunch
+  image: "/img/lunch/sushi.jpg"
+
+ten:
+  name: "Korean BBQ"
+  description: "This is description"
+  price: 40000
+  section: lunch
+  image: "/img/lunch/thitnuong.jpg"
+
+eleven:
+  name: "Banh Xeo"
+  description: "This is description"
+  price: 50000
+  section: dinner
+  image: "/img/dinner/banhxeo.jpg"
+
+twelve:
+  name: "Chilli Crab"
+  description: "This is description"
+  price: 50000
+  section: dinner
+  image: "/img/dinner/chillicrab.jpg"
+
+thirteen:
+  name: "Chao Ech Singapore"
+  description: "This is description"
+  price: 50000
+  section: dinner
+  image: "/img/dinner/frogporridge.jpg"
+
+forteen:
+  name: "Kim Chi Soup"
+  description: "This is description"
+  price: 50000
+  section: dinner
+  image: "/img/dinner/kimchisoup.jpg"
+
+fifteen:
+  name: "Mi Tuong Den"
+  description: "This is description"
+  price: 50000
+  section: dinner
+  image: "/img/dinner/mituongden.jpg"
+
+sixteen:
+  name: "Bia hoi"
+  description: "This is description"
+  price: 30000
+  section: drink
+  image: "/img/drink/biahoi.jpg"
+
+seventeen:
+  name: "Champagne"
+  description: "This is description"
+  price: 30000
+  section: drink
+  image: "/img/drink/champagne.jpg"
+
+eighteen:
+  name: "Singapore Sling"
+  description: "This is description"
+  price: 30000
+  section: drink
+  image: "/img/drink/singaporesling.jpg"
+
+nineteen:
+  name: "Sting dau"
+  description: "This is description"
+  price: 30000
+  section: drink
+  image: "/img/drink/sting.jpg"
+
+tweenty:
+  name: "Tra Da"
+  description: "This is description"
+  price: 30000
+  section: drink
+  image: "/img/drink/trada.jpg"

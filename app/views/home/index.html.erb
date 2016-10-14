@@ -2,9 +2,21 @@
 <% {'breakfast' => 'Breakfast', 'lunch' => 'Lunch', 'dinner' => 'Dinner', 'drink' => 'Drinks'}.each do |key, value| %>
 
 	<% if params[:section] == key %>
-		<%= link_to value, root_path(:section => key), class: 'btn btn-primary' %>
+		<%= link_to value, root_path(:section => key, :sort => params[:sort]), class: 'btn btn-primary' %>
 	<% else %>
-		<%= link_to value, root_path(:section => key), class: 'btn btn-secondary' %>
+		<%= link_to value, root_path(:section => key, :sort => params[:sort]), class: 'btn btn-secondary' %>
+	<% end %>
+
+<% end %>
+</div>
+
+<div class="btn-group btn-group-justified" role="group">
+<% {'alphabetical' => 'Alphabetical', 'low2high' => 'Price Low to High', 'high2low' => 'Price High to Low'}.each do |key, value| %>
+
+	<% if params[:sort] == key %>
+		<%= link_to value, root_path(:sort => key, :section => params[:section]), class: 'btn btn-primary' %>
+	<% else %>
+		<%= link_to value, root_path(:sort => key, :section => params[:section]), class: 'btn btn-secondary' %>
 	<% end %>
 
 <% end %>

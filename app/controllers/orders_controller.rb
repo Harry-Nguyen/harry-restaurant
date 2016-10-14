@@ -15,6 +15,8 @@ class OrdersController < ApplicationController
   # GET /orders/new
   def new
     @order = Order.new
+    @order.update_attribute(:food_id, params[:food].to_i)
+    @food = Food.find(params[:food])
   end
 
   # GET /orders/1/edit

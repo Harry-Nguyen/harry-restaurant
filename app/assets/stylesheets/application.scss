@@ -15,12 +15,37 @@
  */
 @import "bootstrap";
 
-.food-page img {
-	width: 100%;
-	height: auto;
-}
 .food-id-field {
 	display: none;
 	visibility: hidden;
 	opacity: 0;
+}
+#nav-section {
+	text-align: center;
+}
+#nav-section > div {
+	margin: 10px;
+}
+#food-section {
+	text-align: center;
+}
+.food-item {
+	display: inline-block;
+	position: relative;
+	margin-bottom: 10px;
+	margin-right: 5px;
+	padding: 5px;
+	width: calc(25% - 10px);
+	border: solid 1px rgb(0, 0, 255);
+}
+.food-item > img {
+	width: 100%;
+	heigh: auto;
+}
+.food-item > p {
+	margin-bottom: 5px;
+}
+form .field > input {
+	display: inline-block;
+	width: calc(100% - 70px);
 }

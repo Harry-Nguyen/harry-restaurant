@@ -1,3 +1,4 @@
+<section id="nav-section">
 <div class="btn-group btn-group-justified" role="group">
 <% {'breakfast' => 'Breakfast', 'lunch' => 'Lunch', 'dinner' => 'Dinner', 'drink' => 'Drinks'}.each do |key, value| %>
 
@@ -9,7 +10,7 @@
 
 <% end %>
 </div>
-
+<br/>
 <div class="btn-group btn-group-justified" role="group">
 <% {'alphabetical' => 'Alphabetical', 'low2high' => 'Price Low to High', 'high2low' => 'Price High to Low'}.each do |key, value| %>
 
@@ -21,17 +22,17 @@
 
 <% end %>
 </div>
+</section>
 
-<section>
-<% i = 0 %>
+<section id="food-section">
+	<% i = 0 %>
 	<% @foods.each do |f| %>
-	<% i = i + 1 %>
-	<p> <%=i%></p>
-	<p> <%= link_to f.name, f %> </p>
-	<p> Name: <%= f.name %></p>
-	<p> Description: <%= f.description %></p>
-	<p> Price: <%= f.price %></p>
-	<p> Section: <%= f.section %></p>
-	<img src="<%=f.image%>">
+		<div class="food-item">
+			<% i = i + 1 %>
+			<p><%=i%>. <%= link_to f.name, f %> </p>
+			<p> Price: <%= f.price %><span> VND</span></p>
+			<p> Section: <%= f.section %></p>
+			<img src="<%=f.image%>">
+		</div>
 	<% end %>
 </section>

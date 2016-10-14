@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
 
+<div class="col-sm-4">
 <h1><%= @food.name %></h1>
 
 <p>
@@ -27,5 +28,7 @@
   <%= link_to "Make order", "/orders/new?food=" + @food.id.to_s, class: "btn btn-warning" %>
 </p>
 <br/>
-
+</div>
+<div class="col-sm-8">
 <img src="<%= @food.image %>">
+</div>

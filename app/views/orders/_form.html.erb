@@ -13,17 +13,17 @@
 
   <div class="field">
     <%= f.label :name %>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, class: "form-control"%>
   </div>
 
   <div class="field">
     <%= f.label :phone %>
-    <%= f.number_field :phone %>
+    <%= f.number_field :phone, class: "form-control"%>
   </div>
 
   <div class="field">
     <%= f.label :address %>
-    <%= f.text_field :address %>
+    <%= f.text_field :address, class: "form-control"%>
   </div>
 
   <div class="field food-id-field">
@@ -32,6 +32,6 @@
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Make Order", class: "btn btn-warning" %>
   </div>
 <% end %>

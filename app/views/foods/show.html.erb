@@ -1,6 +1,5 @@
 <p id="notice"><%= notice %></p>
 
-<section class="food-page">
 <h1><%= @food.name %></h1>
 
 <p>
@@ -15,9 +14,18 @@
 </p>
 
 <p>
+  <strong>Delivery cost:</strong>
+  <span>20,000 VND</span>
+</p>
+
+<p>
   <strong>Section:</strong>
   <%= @food.section %>
 </p>
 
+<p>
+  <%= link_to "Make order", "/orders/new?food=" + @food.id.to_s, class: "btn btn-warning" %>
+</p>
+<br/>
+
 <img src="<%= @food.image %>">
-</section>
